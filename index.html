@@ -17,7 +17,9 @@
 
 		<meta http-equiv="x-ua-compatible" content="IE=Edge">
 		
-		<script src="https://api.payfunc.com/ui/portal/payfunc-portal.js"></script>
+		<script type="module" src="https://ui.payfunc.com/portal/payfunc-portal/payfunc-portal.esm.js"></script>
+		<script nomodule="" src="https://ui.payfunc.com/portal/payfunc-portal/payfunc-portal.js"></script>
+
 		<link href="https://theme.payfunc.com/dark/index.css" rel="stylesheet">
 
 		<link rel="apple-touch-icon" sizes="180x180" href="https://brand.payfunc.com/icon/apple-icon.png">
@@ -26,6 +28,6 @@
 		<base href="/">
 	</head>
 	<body style="margin: 0;">
-		<payfunc-portal></payfunc-portal>
+		<payfunc-portal server="https://api.payfunc.com/"></payfunc-portal>
 	</body>
 </html>
